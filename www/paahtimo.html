@@ -1,17 +1,18 @@
+<!--VALMIS suurilta osin (katso TODO kohdat)-->
 <!DOCTYPE html>
 <html lang="fi">
 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Tämä kertoo selaimelle, että sivun on mukauduttava laitteen kokoon.-->
-        <title>Aurora Brew Lab | pienpaahtimo & kahvila</title>
-        <meta name="description" content="lisätään"> <!--TODO Lisätään tähän kuvaus-->
+        <title>Aurora Brew Lab | Paahtimo</title>
+        <meta name="description" content="Aurora Brew Lab | Paahtimo">
         <link rel="stylesheet" href="style.css"> <!-- TODO Tarkista, että tässä oikea css tiedosto-->
         <link rel="icon" href="favicon.ico" type="image/x-icon"> <!--TODO tähän favicon -tiedosto-->
     </head>
 
     <body>
-        <header class="hero"> <!--TODO määritä hero -osuuden taustakuva CSS puolella (määrittele styleguide.html puolella)-->
+        <header class="hero"> <!--TODO määritä hero -osuuden taustakuva (oisko roastery3.jpg?) CSS puolella (määrittele styleguide.html puolella)-->
 
             <nav class="navbar"> <!--Tämä on sivun yläpalkki jonne tulee logo ja navigaatio-->
                 <div class="logo">
@@ -36,10 +37,96 @@
 
         <main>  
 
-            <section>
-                <h1>Olet nyt paahtimo -sivulla</h1>
+            <article class="roastery-article"> <!--Laatikko paahtimosta kertovalle artikkelille-->
+                <h2>Paahtimon tarina</h2>    
+                <p>Paahtimomme idea syntyi yrittäjän pienestä haaveesta paahtaa oma aamukahvi. Pieni haave muuttui lopulta suureksi ja nykyään paahtimossamme paahdettu luomukahvi piristääkin useiden suomalaisten aamuja.</p>
+                <p>Paahtimossamme keskitymme pieniinkin yksityiskohtiin ja varmistamme, että jokainen kuppi on täydellinen. Teemme yhteistyötä luotettavien kahvintuottajien kanssa varmistaaksemme, että kahvi on aina huippuluokkaa. Jokainen paahto on mahdollisuus luoda jotain uutta ja ainutlaatuista.</p>
+            </article>
+
+            <section class="roastery-images">
+                <div class="roastery-image1"> <!--Kuva paahtimosta-->
+                    <img src="images/roastery2.jpg" alt="Kuva kahvipaahtimesta, mikä on täynnä kahvipapuja" height="600"> <!--TODO kuvan tarkempi koko/rajaus määritellään CSS avulla, poista/muuta nykyinen html kokomäärittely tarpeen mukaiseksi. Alustavasti asetettu tämä.-->
+                </div>  
+                <div class="roastery-image2"> <!--Kuva työskentelystä-->
+                    <img src="images/roastery1.jpg" alt="Kuva kahvipaahtimon työntekijästä paahtimen luona" height="600"> <!--TODO kuvan tarkempi koko/rajaus määritellään CSS avulla, poista/muuta nykyinen html kokomäärittely tarpeen mukaiseksi. Alustavasti asetettu tämä.-->
+                </div>  
             </section>
-            
+
+            <section class="product-container">
+                <h2>Paahtimon tuotteet</h2>
+                <div class="product-cards">
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <!-- TODO vaihdetaan vielä tähän oikea tuotekuva-->
+                            <img src="images/coffeetable3.jpg" alt="Etiopialainen single origin tuotekuva" height="300"> <!--TODO kuvan tarkempi koko/rajaus määritellään CSS avulla, poista/muuta nykyinen html kokomäärittely tarpeen mukaiseksi. Alustavasti asetettu tämä.-->
+                        </div>
+
+                        <div class="product-info">
+                            <h3 class="product-name">Vaalea paahto</h3>
+                            <p class="product-description">Etiopialainen single origin, jossa kukkaisia ja sitruksisia vivahteita. Kirkas ja hapokas.</p>
+                            <div class="product-tags">
+                                <span class="tag">Jasmiini</span>
+                                <span class="tag">Bergamotti</span>
+                                <span class="tag">Persikka</span>
+                            </div>                        
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <!-- TODO vaihdetaan vielä tähän oikea tuotekuva-->
+                            <img src="images/coffeetable3.jpg" alt="Etiopialainen single origin tuotekuva" height="300"> <!--TODO kuvan tarkempi koko/rajaus määritellään CSS avulla, poista/muuta nykyinen html kokomäärittely tarpeen mukaiseksi. Alustavasti asetettu tämä.-->
+                        </div>
+
+                        <div class="product-info">
+                            <h3 class="product-name">Keski paahto</h3>
+                            <p class="product-description">Kolumbialainen kahvi, joka toimii kaikkiin tilanteisiin. Pehmeä, pyöreä ja miellyttävä . Toimii suodattimessa tai maitokahvissa.</p>
+                            <div class="product-tags">
+                                <span class="tag">Pähkinä</span>
+                                <span class="tag">Karamelli</span>
+                                <span class="tag">Luumu</span>
+                            </div>                        
+                        </div>
+                    </article>
+                    
+                    <article class="product-card">
+                        <div class="product-image">
+                            <!-- TODO vaihdetaan vielä tähän oikea tuotekuva-->
+                            <img src="images/coffeetable3.jpg" alt="Etiopialainen single origin tuotekuva" height="300"> <!--TODO kuvan tarkempi koko/rajaus määritellään CSS avulla, poista/muuta nykyinen html kokomäärittely tarpeen mukaiseksi. Alustavasti asetettu tämä.-->
+                        </div>
+
+                        <div class="product-info">
+                            <h3 class="product-name">Tumma paahto</h3>
+                            <p class="product-description">Täyteläinen sekoitus, joka on suunniteltu espressokoneelle. Tumma suklaa, paahdettu manteli, intensiivinen mutta ei kitkerä.</p>
+                            <div class="product-tags">
+                                <span class="tag">Tumma suklaa</span>
+                                <span class="tag">Manteli</span>
+                                <span class="tag">Karamelli</span>
+                            </div>                        
+                        </div>
+                    </article>
+                    
+                    <article class="product-card">
+                        <div class="product-image">
+                            <!-- TODO vaihdetaan vielä tähän oikea tuotekuva-->
+                            <img src="images/coffeetable3.jpg" alt="Etiopialainen single origin tuotekuva" height="300"> <!--TODO kuvan tarkempi koko/rajaus määritellään CSS avulla, poista/muuta nykyinen html kokomäärittely tarpeen mukaiseksi. Alustavasti asetettu tämä.-->
+                        </div>
+
+                        <div class="product-info">
+                            <h3 class="product-name">Extratumma paahto</h3>
+                            <p class="product-description">Aurora Brew Labin spesiaali paahto: Sisältää rouheaa robustaa, maanläheistä Indonesiaa ja pähkinäistä Brasiliaa. Paahto on tummaa, niin tummaa, että maku puskee läpi makeimmankin höyrytetyn maidon.</p>
+                            <div class="product-tags">
+                                <span class="tag">Tumma suklaa</span>
+                                <span class="tag">Pähkinä</span>
+                                <span class="tag">Mauste</span>
+                            </div>                        
+                        </div>
+                    </article>                    
+
+                </div>
+            </section>
+
         </main>
 
         <footer>
@@ -58,8 +145,8 @@
                 </div>
 
                 <div class="footer-column2">
-                    <div>
-                        <h4>Aukiolo</h4>
+                    <h3>Aukioloajat:</h3>
+                    <div class="open-hours">
                         <p>Ma-Pe 08:00-20:00<br>La 10:00-21:00<br>Su 10:00-20:00</p>
                     </div>
                     <a href="/"><img src="Lisätään logotiedosto" alt="Yrityksen logo"></a> <!--TODO lisää logotiedosto. Tekee logokuvasta ns. samalla linkin etusivulle-->
