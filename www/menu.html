@@ -1,4 +1,4 @@
-<!--Valmis suurilta osin (katso TODO kohdat)-->
+<!--VALMIS suurilta osin (katso TODO kohdat)-->
 <!DOCTYPE html>
 <html lang="fi">
 
@@ -9,6 +9,10 @@
         <meta name="description" content="Aurora Brew Lab | Menu">
         <link rel="stylesheet" href="style.css"> <!-- TODO Tarkista, että tässä oikea css tiedosto-->
         <link rel="icon" href="favicon.ico" type="image/x-icon"> <!--TODO tähän favicon -tiedosto-->
+        <!--TODO Fontit: alla Montserrat, (en löytänyt "Grown" -fonttia)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">        
     </head>
 
     <body>
@@ -16,7 +20,7 @@
 
             <nav class="navbar"> <!--Tämä on sivun yläpalkki jonne tulee logo ja navigaatio-->
                 <div class="logo">
-                    <a href="/"><img src="Lisätään logotiedosto" alt="Yrityksen logo"></a> <!--TODO lisää logotiedosto. Tekee logokuvasta ns. samalla linkin etusivulle-->
+                    <a href="index.html"><img src="Lisätään logotiedosto" alt="Yrityksen logo"></a> <!--TODO lisää logotiedosto. Tekee logokuvasta ns. samalla linkin etusivulle-->
                 </div>
                 <ul class="nav-links">
                     <li><a href="index.html">Etusivu</a></li> 
@@ -37,29 +41,29 @@
 
         <main>  
 
-            <section class="menu-textbox">
+            <section class="menu-textbox"> <!--Laatikko kahvilaan liittyvälle tekstille-->
                 <p>Kahvilaamme on tervetulleita kaikki vauvasta vaarin. Arjen kiireessä sekä juhlahetkinä löydät meiltä herkut 
                 pienempään suolaisen nälkään tai makeanhimoon. Menussamme on kattava valikoima erilaisia suolaisia piirakoita, 
                 leipiä, kakkuja ja muita leivonnaisia. Kahvimme on omassa paahtimossa paahdettua luomukahvia.</p>
                 <p>Menumme vaihtuu kausittain, mutta siinä säilyy vuoden ympäri asiakkaiden rakastamat klassikot!</p>
             </section>
 
-            <section class="menu-grid">
+            <section class="menu-grid"> <!--Tuotekuva ja Menu lista-->
 
-                <div class="menu-image">
-                    <img src="images/pastry.jpg" alt="Kuva kahvilan leivonnaisista" height="600"> <!--TODO kokoa muutetaan tarvittavissa-->
+                <div class="menu-image"> <!--Tuotekuva-->
+                    <img src="images/pastry.jpg" alt="Kuva kahvilan leivonnaisista" height="600"> <!--TODO kuvan tarkempi koko/rajaus määritellään CSS avulla, poista/muuta nykyinen html kokomäärittely tarpeen mukaiseksi. Alustavasti asetettu tämä.-->
                 </div>  
 
-                <!--Tähän ehkä mahdollisesti toinen tuotekuva (esim. mudcake.jpg)??-->
+                <!--Tähän voisi lisätä toisen tuotekuvan (esim. mudcake.jpg)??-->
                 
-                <div class="menu-container">
+                <div class="menu-container"> <!--Menu lista-->
                     <h2>Menu</h2>
 
                     <h3>Suolaiset :</h3>
                     <ul>
                         <li><span class="item-name">Fetapiirakka</span> <span class="price">5.00€</span></li>
                         <li><span class="item-name">Kana-vuohenjuusto Focaccia</span> <span class="price">7.00€</span></li>
-                        <li><span class="item-name">Kinkku-juusto Focaccia</span> <span class="price"></span>7.00€</li>
+                        <li><span class="item-name">Kinkku-juusto Focaccia</span> <span class="price">7.00€</span></li>
                         <li><span class="item-name">Täytetty Croissant</span> <span class="price">5.00€</span></li>
                         <li><span class="item-name">Täytetty kauden leipä</span> <span class="price">5.00€</span></li>
                     </ul>
@@ -105,11 +109,11 @@
             <div class="grid-footer">
 
                 <div class="footer-column1">
-                    <h4>Yhteystiedot:</h4>
+                    <h3>Yhteystiedot:</h3>
                     <address class="contact-info">
                         <p>Aurora Brew Lab</p>
                         <p>Sähköposti: <a href="mailto:kahvila@aurorabrewlab.fi">kahvila@aurorabrewlab.fi</a></p>
-                        <p>Puh: <a href="tel:+0442804058">+044 2804058</a></p>
+                        <p>Puh: <a href="tel:+358442804058">044 280 4058</a></p>
                         <p>Osoite: <a href="https://www.google.com/maps/place/Yl%C3%A4tori+2,+65100+Vaasa/@63.0953488,21.6131516,17z/data=!3m1!4b1!4m6!3m5!1s0x467d60436d828da1:0xc48e803fbcfc6513!8m2!3d63.0953488!4d21.6157265!16s%2Fg%2F11l5d118_l?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Ylätori 2 , 65100 Vaasa</a></p>
                     </address>
                     <a href="lomake.html" class="button4">Ota yhteyttä!</a>
@@ -120,7 +124,7 @@
                     <div class="open-hours">
                         <p>Ma-Pe 08:00-20:00<br>La 10:00-21:00<br>Su 10:00-20:00</p>
                     </div>
-                    <a href="/"><img src="Lisätään logotiedosto" alt="Yrityksen logo"></a> <!--TODO lisää logotiedosto. Tekee logokuvasta ns. samalla linkin etusivulle-->
+                    <a href="index.html"><img src="Lisätään logotiedosto" alt="Yrityksen logo"></a> <!--TODO lisää logotiedosto. Tekee logokuvasta ns. samalla linkin etusivulle-->
                 </div>
 
             </div>
