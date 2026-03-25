@@ -1,23 +1,35 @@
-/* Muuttujat väreille */
-:root {
-	--color-hero-bg: #4B3621;
-	--color-secondary: #BB5C38;
-	--color-mood-1: #5D4037;
-	--color-mood-2: #E1AD60;
-	--color-mood-3: #FFFDD0;
-	--color-mood-4: #F5EEDA;
-	--color-mood-5: #FAF0E6;
-}
-
-/* Fontit */
 @font-face {
     font-family: 'Grown';
     src: url('../fonts/grown.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+:root {
+    /* VÄRIT */    
+        /* Taustavärit */
+        --color-cream: #faf0e6; /* Koko sivuston taustaväri */
+        --color-coffee: #4b3621; /* Taustaväri Footerille */
+        --color-sand: #f5eeda; /* Taustaväri tekstiosioille (määritellään vielä mille)*/
+        --color-gold: #e1ad60; /* Taustaväri tekstiosioille (määritellään vielä mille)*/
+        
+        /* Korostusvärit */
+        --color-rust: #b85c38; /* Korostusväri elementille (määritellään vielä mille)*/
+        --color-choco: #5d4037; /* Korostusväri elementille (määritellään vielä mille)*/
+        --color-yellow: #fffdd0; /* Korostusväri elementille (määritellään vielä mille)*/
+
+        /* TYPOGRAFIA */
+        --font-header: 'Grown', 'Playfair Display', serif;
+        --font-body: 'Montserrat Classic', sans-serif;
+    }
+
+/* FONTIT */
+    h1, h2, h3, h4 {
+        font-family: var(--font-header);
+        /* Fontti pysyy samana, mutta koko ja väri voi vaihdella */
+}
+
+    p {
+        font-family: var(--font-body);
+        /* Fontti pysyy samana, mutta koko ja väri voi vaihdella */
 }
 
 .hero {
@@ -60,22 +72,16 @@
 	align-items: center;
 }
 
-
-body {
-	font-family: 'Montserrat', serif;
-	color: white;
-}
-
-
 h1 {
-	font-family: 'Grown', serif;
 	font-size: 5rem;
     margin-bottom: 0;
+    color: white;
 }
 
 .hero-text p {
 	font-size: 2rem;
     margin-top: 0;
+    color: white;
 }
 
 .nav-links a {
