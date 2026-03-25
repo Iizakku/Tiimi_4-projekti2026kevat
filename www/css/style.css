@@ -22,7 +22,9 @@
 
 .hero {
 	position: relative;
-	background-color: var(--color-hero-bg);
+    background-image: url('../images/getty-images-Oq5kaUXLiLI-unsplash.jpg');
+    background-position: center 75%;
+/*	background-color: var(--color-hero-bg);*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,8 +60,6 @@
 	align-items: center;
 }
 
-.hero-text {
-}
 
 body {
 	font-family: 'Montserrat', serif;
@@ -69,11 +69,13 @@ body {
 
 h1 {
 	font-family: 'Grown', serif;
-	font-size: 3rem;
+	font-size: 5rem;
+    margin-bottom: 0;
 }
 
 .hero-text p {
-	font-size: 1.5rem;
+	font-size: 2rem;
+    margin-top: 0;
 }
 
 .nav-links a {
