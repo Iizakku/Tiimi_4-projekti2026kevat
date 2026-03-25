@@ -1,21 +1,26 @@
+<!--VALMIS suurilta osin (katso TODO kohdat)-->
 <!DOCTYPE html>
 <html lang="fi">
 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Tämä kertoo selaimelle, että sivun on mukauduttava laitteen kokoon.-->
-        <title>Aurora Brew Lab | pienpaahtimo & kahvila</title>
-        <meta name="description" content="lisätään"> <!--TODO Lisätään tähän kuvaus-->
+        <title>Aurora Brew Lab | Menu</title>
+        <meta name="description" content="Aurora Brew Lab | Menu">
         <link rel="stylesheet" href="style.css"> <!-- TODO Tarkista, että tässä oikea css tiedosto-->
         <link rel="icon" href="favicon.ico" type="image/x-icon"> <!--TODO tähän favicon -tiedosto-->
+        <!--TODO Fontit: alla Montserrat, (en löytänyt "Grown" -fonttia)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">        
     </head>
 
     <body>
-        <header class="hero"> <!--TODO määritä hero -osuuden taustakuva CSS puolella (määrittele styleguide.html puolella)-->
+        <header class="hero"> <!--TODO määritä hero -osuuden taustakuva (oisko roastery3.jpg?) CSS puolella (määrittele styleguide.html puolella)-->
 
             <nav class="navbar"> <!--Tämä on sivun yläpalkki jonne tulee logo ja navigaatio-->
                 <div class="logo">
-                    <a href="/"><img src="Lisätään logotiedosto" alt="Yrityksen logo"></a> <!--TODO lisää logotiedosto. Tekee logokuvasta ns. samalla linkin etusivulle-->
+                    <a href="index.html"><img src="Lisätään logotiedosto" alt="Yrityksen logo"></a> <!--TODO lisää logotiedosto. Tekee logokuvasta ns. samalla linkin etusivulle-->
                 </div>
                 <ul class="nav-links">
                     <li><a href="index.html">Etusivu</a></li> 
@@ -36,8 +41,65 @@
 
         <main>  
 
-            <section>
-                <h1>Olet nyt menu -sivulla</h1>
+            <section class="menu-textbox"> <!--Laatikko kahvilaan liittyvälle tekstille-->
+                <p>Kahvilaamme on tervetulleita kaikki vauvasta vaarin. Arjen kiireessä sekä juhlahetkinä löydät meiltä herkut 
+                pienempään suolaisen nälkään tai makeanhimoon. Menussamme on kattava valikoima erilaisia suolaisia piirakoita, 
+                leipiä, kakkuja ja muita leivonnaisia. Kahvimme on omassa paahtimossa paahdettua luomukahvia.</p>
+                <p>Menumme vaihtuu kausittain, mutta siinä säilyy vuoden ympäri asiakkaiden rakastamat klassikot!</p>
+            </section>
+
+            <section class="menu-grid"> <!--Tuotekuva ja Menu lista-->
+
+                <div class="menu-image"> <!--Tuotekuva-->
+                    <img src="images/pastry.jpg" alt="Kuva kahvilan leivonnaisista" height="600"> <!--TODO kuvan tarkempi koko/rajaus määritellään CSS avulla, poista/muuta nykyinen html kokomäärittely tarpeen mukaiseksi. Alustavasti asetettu tämä.-->
+                </div>  
+
+                <!--Tähän voisi lisätä toisen tuotekuvan (esim. mudcake.jpg)??-->
+                
+                <div class="menu-container"> <!--Menu lista-->
+                    <h2>Menu</h2>
+
+                    <h3>Suolaiset :</h3>
+                    <ul>
+                        <li><span class="item-name">Fetapiirakka</span> <span class="price">5.00€</span></li>
+                        <li><span class="item-name">Kana-vuohenjuusto Focaccia</span> <span class="price">7.00€</span></li>
+                        <li><span class="item-name">Kinkku-juusto Focaccia</span> <span class="price">7.00€</span></li>
+                        <li><span class="item-name">Täytetty Croissant</span> <span class="price">5.00€</span></li>
+                        <li><span class="item-name">Täytetty kauden leipä</span> <span class="price">5.00€</span></li>
+                    </ul>
+
+                    <h3>Makeat :</h3>
+                    <ul>
+                        <li><span class="item-name">Auroran suklaakakku</span> <span class="price">7.50€</span></li>
+                        <li><span class="item-name">Porkkanakakku</span> <span class="price">7.50€</span></li>
+                        <li><span class="item-name">Mustikkapiirakka</span> <span class="price">6.00€</span></li>
+                        <li><span class="item-name">Voisilmäpulla</span> <span class="price">4.00€</span></li>
+                        <li><span class="item-name">Korvapuusti</span> <span class="price">4.00€</span></li>
+                        <li><span class="item-name">Mutakakku</span> <span class="price">4.00€</span></li>
+                        <li><span class="item-name">Kauden vaihtuvat makeat</span></li>
+                    </ul>
+
+                    <h3>Kahvit :</h3>
+                    <ul>
+                        <li><span class="item-name">Talon luomukahvi</span> <span class="price">3.50€</span></li>
+                        <li><span class="item-name">Cold Brew</span> <span class="price">4.00€</span></li>
+                        <li><span class="item-name">Cappucino</span> <span class="price">4.50€</span></li>
+                        <li><span class="item-name">Espresso</span> <span class="price">3.00€</span></li>
+                        <li><span class="item-name">Flat white</span> <span class="price">4.00€</span></li>
+                        <li><span class="item-name">Latte</span> <span class="price">4.00€</span></li>
+                        <li><span class="item-name">Ice Latte</span> <span class="price">4.20€</span></li>
+                        <li><span class="item-name">Jäätelökahvi</span> <span class="price">4.50€</span></li>                                                
+                    </ul>
+
+                    <h3>Muut juomat :</h3>
+                    <ul>
+                        <li><span class="item-name">Vesi </span> <span class="price">1.00€</span></li>
+                        <li><span class="item-name">Virvoitusjuoma</span> <span class="price">3.50€</span></li>
+                        <li><span class="item-name">Pillimehu</span> <span class="price">2.00€</span></li>
+                        <li><span class="item-name">Tee</span> <span class="price">3.00€</span></li>
+                    </ul>                    
+                </div>
+
             </section>
             
         </main>
@@ -47,22 +109,22 @@
             <div class="grid-footer">
 
                 <div class="footer-column1">
-                    <h4>Yhteystiedot:</h4>
+                    <h3>Yhteystiedot:</h3>
                     <address class="contact-info">
                         <p>Aurora Brew Lab</p>
                         <p>Sähköposti: <a href="mailto:kahvila@aurorabrewlab.fi">kahvila@aurorabrewlab.fi</a></p>
-                        <p>Puh: <a href="tel:+0442804058">+044 2804058</a></p>
+                        <p>Puh: <a href="tel:+358442804058">044 280 4058</a></p>
                         <p>Osoite: <a href="https://www.google.com/maps/place/Yl%C3%A4tori+2,+65100+Vaasa/@63.0953488,21.6131516,17z/data=!3m1!4b1!4m6!3m5!1s0x467d60436d828da1:0xc48e803fbcfc6513!8m2!3d63.0953488!4d21.6157265!16s%2Fg%2F11l5d118_l?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Ylätori 2 , 65100 Vaasa</a></p>
                     </address>
                     <a href="lomake.html" class="button4">Ota yhteyttä!</a>
                 </div>
 
                 <div class="footer-column2">
-                    <div>
-                        <h4>Aukiolo</h4>
+                    <h3>Aukioloajat:</h3>
+                    <div class="open-hours">
                         <p>Ma-Pe 08:00-20:00<br>La 10:00-21:00<br>Su 10:00-20:00</p>
                     </div>
-                    <a href="/"><img src="Lisätään logotiedosto" alt="Yrityksen logo"></a> <!--TODO lisää logotiedosto. Tekee logokuvasta ns. samalla linkin etusivulle-->
+                    <a href="index.html"><img src="Lisätään logotiedosto" alt="Yrityksen logo"></a> <!--TODO lisää logotiedosto. Tekee logokuvasta ns. samalla linkin etusivulle-->
                 </div>
 
             </div>
