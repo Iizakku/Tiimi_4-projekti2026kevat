@@ -32,6 +32,10 @@
         /* Fontti pysyy samana, mutta koko ja väri voi vaihdella */
 }
 
+body {
+    background-color: var(--color-cream);
+}
+
 .hero {
 	position: relative;
     background-image: url('../images/roastery3.jpg');
@@ -50,8 +54,20 @@
     text-align: center;
 }
 
+.logo img {
+    height: 18rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 23rem;
+    margin-left: 2rem;
+}
+
 .navbar {
 	width: 100%;
+    height: 60px;
     position: absolute;
     top: 0;
     left: 0;
@@ -59,17 +75,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    background: var( --color-coffee);
 }
 
 .nav-links {
     display: flex;
     list-style: none;
     gap: 1rem;
-}
-
-.logo {
-	align-items: center;
+    padding: 0.5rem 1rem;
 }
 
 h1 {
@@ -85,6 +98,28 @@ h1 {
 }
 
 .nav-links a {
-	font-size: 1rem;
+    color: white;
+    font-size: 1rem;
 }
 
+.nav-links a:visited {
+    color: pink;
+}
+
+/* info-section */
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 1.5rem; 
+    background-color: var(--color-sand);
+    padding-left: 10rem;
+    padding-right: 15rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.text-box1 {
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+}
