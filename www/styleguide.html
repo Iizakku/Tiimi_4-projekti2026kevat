@@ -1,4 +1,4 @@
-<!--KESKEN-->
+<!--KESKEN (Tähän tulee tehdä vielä CSS osiot)-->
 
 <!DOCTYPE html>
 <html lang="fi">
@@ -18,15 +18,15 @@
         :root {
     /* VÄRIT */    
         /* Taustavärit */
-            --color-cream: #faf0e6; /* Koko sivuston taustaväri */
-            --color-coffee: #4b3621; /* Taustaväri Footerille */
-            --color-sand: #f5eeda; /* Taustaväri tekstiosioille */
-            --color-gold: #e1ad60; /* Taustaväri tekstiosioille */
+            --color-cream: #faf0e6; /* Koko sivuston päätaustaväri (body)*/
+            --color-coffee: #4b3621; /* Taustaväri Footerille (footer)*/
+            --color-sand: #f5eeda; /* Taustaväri korteille (card) ja eri osioille (section) */
+            --color-gold: #e1ad60; /* Linkit, painikkeet, korostukset (esim. article osioiden taustaväriksi) */
         
         /* Korostusvärit */
-            --color-rust: #b85c38; /* Korostusväri elementille */
-            --color-choco: #5d4037; /* Korostusväri elementille */
-            --color-yellow: #fffdd0; /* Korostusväri elementille */
+            --color-rust: #b85c38; /* Linkit, painikkeet (hover väri) */
+            --color-choco: #5d4037; /* Toinen värivaihtoehto footerille */
+            --color-yellow: #fffdd0; /* Mahdolliset highlight alueet */
 
     /* TYPOGRAFIA */
             --font-header: 'Grown', 'Playfair Display', serif;
@@ -34,9 +34,21 @@
         }
 
     /* FONTIT */
+    /* STYLEGUIDE OHJE: Fonteissa “Grown” isoihin otsikoihin (hero + section headers) ja “Montserrat Classic” leipäteksti, napit, navigaatio. */
+       
         h1, h2, h3, h4 {
             font-family: var(--font-header);
         /* Fontti pysyy samana, mutta koko ja väri voi vaihdella */
+        }
+
+        /* STYLEGUIDE OHJE: H1 otsikot isoja ja ilmavia hieman suuremmalla letter spacingilla. */ 
+        h1 {
+            /* IISAK LISÄÄ TÄHÄN CSS */
+        }
+
+        /* STYLEGUIDE OHJE:  H2 selkeä, vähemmän spacingia. */
+        h2 {
+            /* IISAK LISÄÄ TÄHÄN CSS */
         }
 
         p {
@@ -45,32 +57,48 @@
         }
 
 
-    /* IISAK LISÄÄ ALLA OLEVAT KOMPONENTTIEN TYYLIT ja jokaiselle komponentille 1–2 lauseen käyttöohje*/
+    /* IISAK LISÄÄ ALLA OLEVAT KOMPONENTTIEN TYYLIT STYLEGUIDE OHJEIDEN MUKAAN (Jos kysyttävää ohjeista kysy Niklakselta tarkempi visio elementille)/
 
     /* KOMPONENTIT */
     
     /* 1. Hero & Navigaatio*/
-
-    /* Lisää Hero/navigaatio -osuuden yleinen css design tähän */
-
-
-    /* 2. Painikkeet */
-
-    /* Lisää painikkeiden yleinen css design tähän (painikkeiden perustyyli sama, mutta väri ja laveys voisi muuttua tarpeen mukaan) */
+    /* STYLEGUIDE OHJE: Hero osiossa logo vasen yläkulma (pieni kuvake), yrityksen nimi keskellä ja nav oikea yläkulma. Taustana kuva (roastery3.jpg) koko heron laajuudella.
+    Navigaation tausta läpinäkyvä. Jos mahdollista, niin seuraa scrollissa ja tausta vaihtuu #4B3621 */
+    
+    /* Lisää Hero/navigaatio -osuuden yleinen css design tähän (poista tämä kommentti kun valmis) */
 
 
-    /* 3. Tuotekortti (card)*/
 
-    /* Lisää tuotekorttien (tuotekuva + tämän info) yleinen css design tähän */
+    /* 2. SECTION -osiot*/
+    /* STYLEGUIDE OHJE: Sectionit vuorotellen taustoilla #FAF0E6 ja #F5EEDA, centered content. */
+
+    /* Lisää SECTION yleinen css design tähän (poista tämä kommentti kun valmis) */
 
 
-    /* 4. Footer */
 
-    /* Lisää Footerin yleinen css design tähän */
+    /* 3. Painikkeet */
+    /* STYLEGUIDE OHJE: Linkeissä hover -> underline. CTA napit -> tausta #E1AD60, teksti vaalea. (painikkeiden perustyyli sama, mutta väri ja laveys voisi muuttua tarpeen mukaan)
+
+    /* Lisää painikkeiden yleinen css design tähän (poista tämä kommentti kun valmis) */
+
+
+
+    /* 4. Tuotekortti (card)*/
+    /* STYLEGUIDE OHJE: Taustaväri #F5EEDA Kuva kortin yläreunaan, teksti alle ja makuvivahteet omiin label tyyppisiin osioihin korostusvärillä #E1AD60. */ 
+    /* Lisää tuotekorttien (tuotekuva + tämän info) yleinen css design tähän. (poista tämä kommentti kun valmis)*/
+
+
+
+    /* 5. Footer */
+    /* STYLEGUIDE OHJE: Footer tummemmalla teemalla #4B3621. Footeriin aukioloajat, logo, yhteystiedot, linkit. */
+
+    /* Lisää Footerin yleinen css design tähän. (poista tämä kommentti kun valmis) */
 
     </style>
 
     <body>
+
+        <!--Tässä esimerkki hero & navigaatioe elementistä-->
         <header class="hero"> 
             <nav class="navbar"> <!--Tämä on sivun yläpalkki jonne tulee logo ja navigaatio-->
                 <div class="logo">
@@ -95,12 +123,135 @@
 
         <main>  
 
+            <!--Tässä esimerkki section osasta ja painikkeista-->
             <section>
-             <!--TODO TÄHÄN LISÄTÄÄN VIELÄ ESIMERKKISISÄLTÖÄ-->
+                <div class="grid-container1"> 
+
+                    <div class="image-box1">
+                        <img src="images/coffeemaker1.jpg" alt="Kahvilan työntekijä valmistamassa kahvia" height="600"> <!--TODO kuvan tarkempi koko/rajaus määritellään CSS avulla, poista/muuta nykyinen html kokomäärittely tarpeen mukaiseksi. Alustavasti asetettu tämä.-->
+                    </div>
+
+                    <div class="text-box1">
+                        <h2>Buttons</h2>
+                        <a href="styleguide.html" class="button1">Button 1</a>
+                        <a href="styleguide.html" class="button2">Button 2</a>
+                        <a href="styleguide.html" class="button3">Button 3</a>
+                        <a href="styleguide.html" class="button4">Button 4</a>
+                    </div>
+
+            </section>
+
+            <!--Tässä esimerkki article osion ulkonäöstä, johon kuvataan samalla fonttityylit-->
+            <article class="fonts"> 
+
+                <h2>FONTS</h2>
+
+                <div class="font-grown-section"> <!--Artikkelin tekstiosio-->
+                    <h3>HEADER FONT</h3>
+                    <h4>Aa Grown</h4>
+                    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                    <P>abcdefghijklmnopqrstuvwxyz</P>
+                    <p>1234567890</p>
+                </div>
+
+                <div class="font-montserrat-section"> <!--Artikkelin tekstiosio-->
+                    <h3>BODY TYPE</h3>
+                    <h4>Aa Montserrat Classic</h4>
+                    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                    <P>abcdefghijklmnopqrstuvwxyz</P>
+                    <p>1234567890</p>
+                </div>                
+
+            </article>
+
+            <!--Tässä esitellään sivuston väripalettia-->
+            <section>
+                <h2>COLOR PALETTE</h2>
+
+                <div class="color-palette">
+
+                    <div class="palette-item">
+                        <div class="circle" style="background-color: #faf0e6;"></div>
+                        <span class="hex-code">#FAF0E6</span>
+                    </div>
+
+                    <div class="palette-item">
+                        <div class="circle" style="background-color: #f5eeda;"></div>
+                        <span class="hex-code">#F5EEDA</span>
+                    </div>
+
+                    <div class="palette-item">
+                        <div class="circle" style="background-color: #fffdd0;"></div>
+                        <span class="hex-code">#FFFDD0</span>
+                    </div>
+                    
+                    <div class="palette-item">
+                        <div class="circle" style="background-color: #e1ad60;"></div>
+                        <span class="hex-code">#E1AD60</span>
+                    </div>
+                    
+                    <div class="palette-item">
+                        <div class="circle" style="background-color: #b85c38;"></div>
+                        <span class="hex-code">#B85C38</span>
+                    </div>
+                    
+                    <div class="palette-item">
+                        <div class="circle" style="background-color: #5d4037;"></div>
+                        <span class="hex-code">#5D4037</span>
+                    </div>   
+
+                    <div class="palette-item">
+                        <div class="circle" style="background-color: #4b3621;"></div>
+                        <span class="hex-code">#4B3621</span>
+                    </div>                        
+                    
+                </div>
+
+            </section>
+
+            <!--Tässä esimerkki tuotekorteista ja niiden tyylistä-->
+            <section class="product-container">
+                <h2>Product cards</h2>
+                <div class="product-cards">
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/coffeetable3.jpg" alt="Tuotteen kuva" height="300"> <!--TODO kuvan tarkempi koko/rajaus määritellään CSS avulla, poista/muuta nykyinen html kokomäärittely tarpeen mukaiseksi. Alustavasti asetettu tämä.-->
+                        </div>
+
+                        <div class="product-info">
+                            <h3 class="product-name">Product name</h3>
+                            <p class="product-description">Description text.</p>
+                            <div class="product-tags">
+                                <span class="tag">flavor</span>
+                                <span class="tag">flavor</span>
+                                <span class="tag">flavor</span>
+                            </div>                        
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/coffeetable3.jpg" alt="Tuotteen kuva" height="300"> <!--TODO kuvan tarkempi koko/rajaus määritellään CSS avulla, poista/muuta nykyinen html kokomäärittely tarpeen mukaiseksi. Alustavasti asetettu tämä.-->
+                        </div>
+
+                        <div class="product-info">
+                            <h3 class="product-name">Product name</h3>
+                            <p class="product-description">Description text.</p>
+                            <div class="product-tags">
+                                <span class="tag">flavor</span>
+                                <span class="tag">flavor</span>
+                                <span class="tag">flavor</span>
+                            </div>                        
+                        </div>
+                    </article>              
+
+                </div>
             </section>
 
         </main>
 
+        <!--Tässä on esimerkki footerista-->
         <footer>
 
             <div class="grid-footer">
