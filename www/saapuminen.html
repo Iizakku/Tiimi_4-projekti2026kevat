@@ -1,4 +1,4 @@
-<!--KESKEN: sisältö ja tarkempi koodi puuttuu (katso TODO kohdat)-->
+<!--VALMIS suurilta osin (katso TODO kohdat)-->
 <!DOCTYPE html>
 <html lang="fi">
 
@@ -8,7 +8,11 @@
         <title>Aurora Brew Lab | Saapuminen</title>
         <meta name="description" content="Aurora Brew Lab | Saapuminen">
         <link rel="stylesheet" href="css/style.css"> 
-        <link rel="icon" href="favicon.ico" type="image/x-icon"> <!--TODO tähän favicon -tiedosto-->
+        <!--Alla favicon linkkaus-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
         <!--Iisakilla fontit lisätty käyttöön CSS puolella-->
     </head>
 
@@ -36,8 +40,34 @@
         </header>
 
         <main>  
-            
-            <h2>OLET NYT SAAPUMINEN -SIVULLA</h2>
+
+            <section class="map-page-grid">
+                
+                <div class="map">    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1805.4211289699306!2d21.615726499999997!3d63.09534879999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x467d60436d828da1%3A0xc48e803fbcfc6513!2sYl%C3%A4tori%202%2C%2065100%20Vaasa!5e0!3m2!1sfi!2sfi!4v1774448435266!5m2!1sfi!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="contact-info">
+                    <h2>Yhteystiedot:</h2>
+                    <address class="contact-info">
+                        <p>Aurora Brew Lab</p>
+                        <p>Sähköposti: <a href="mailto:kahvila@aurorabrewlab.fi">kahvila@aurorabrewlab.fi</a></p>
+                        <p>Puh: <a href="tel:+358442804058">044 280 4058</a></p>
+                        <p>Osoite: <a href="https://www.google.com/maps/place/Yl%C3%A4tori+2,+65100+Vaasa/@63.0953488,21.6131516,17z/data=!3m1!4b1!4m6!3m5!1s0x467d60436d828da1:0xc48e803fbcfc6513!8m2!3d63.0953488!4d21.6157265!16s%2Fg%2F11l5d118_l?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Ylätori 2 , 65100 Vaasa</a></p>
+                    </address>
+                    <a href="lomake.html" class="button4">Ota yhteyttä!</a>
+                </div>
+
+                <div class="open-hours">
+                    <h2>Aukioloajat:</h2>
+                    <div class="open-hours">
+                        <p>Ma-Pe 08:00-20:00<br>La 10:00-21:00<br>Su 10:00-20:00</p>
+                    </div>
+                    <a href="index.html"><img src="images/logo2.png" alt="Yrityksen logo"></a> <!--Tekee logokuvasta ns. samalla linkin etusivulle-->
+                </div>
+
+
+            </section>
 
         </main>
 
