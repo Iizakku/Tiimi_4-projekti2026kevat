@@ -40,7 +40,6 @@ body {
 	position: relative;
     background-image: url('../images/roastery3.jpg');
     background-position: center 75%;
-/*	background-color: var(--color-hero-bg);*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +74,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var( --color-coffee);
+	background: rgba(101, 67, 33, 0.7);
 }
 
 .nav-links {
@@ -100,6 +99,7 @@ h1 {
 .nav-links a {
     color: white;
     font-size: 1rem;
+	text-decoration: none;
 }
 
 .nav-links a:visited {
@@ -123,3 +123,20 @@ h1 {
     margin-left: 10rem;
     margin-bottom: 5rem;
 }
+
+/* Napit */
+
+.button1 {
+	background-color: var(--color-gold);
+	color: white;
+	padding: 0.75rem 1.5rem;
+	border-radius: 8px;
+	text-decoration: none;
+	font-size: 1rem;
+	transition: background-color 0.3s;
+}
+
+.button1:hover {
+	background-color: rgba(101, 67, 33, 0.7);
+}
+
