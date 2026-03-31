@@ -140,3 +140,66 @@ h1 {
 	background-color: rgba(101, 67, 33, 0.7);
 }
 
+
+
+/*----------Yhteydenottolomakesivu----------*/
+
+.form-page-textbox {
+    border: 2px solid #5d4037;
+    background-color: var(--color-sand);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 1px;
+}
+   
+label, pr {
+    font-size: 1.2em;
+    margin-left: 10px;
+    font-family: 'Montserrat Classic', sans-serif;
+}
+
+input[type=text],input[type=email], input[type=tel], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    
+}
+
+button[type=submit]  {
+	background-color: var(--color-gold);
+	color: white;
+	padding: 0.75rem 1.5rem;
+	border-radius: 8px;
+	text-decoration: none;
+	font-size: 1rem;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: rgba(101, 67, 33, 0.7);
+}
+
+
+.form-grid {
+    padding: 12px 24px 24px 24px;
+    margin: 48px 12px;
+    background: #e8d2bf;;
+    border-radius: 10px;
+    border: 2px solid #5d4037;
+    
+}
+
+.form-grid h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+/*-------yhteydenottolomakeloppuu*-------/
+
+
+
