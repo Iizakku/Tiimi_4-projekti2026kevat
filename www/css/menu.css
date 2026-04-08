@@ -36,9 +36,6 @@
         /* Fontti pysyy samana, mutta koko ja väri voi vaihdella */
 }
 
-body {
-    background-color: var(--color-cream);
-}
 
 .hero {
 	position: relative;
@@ -117,21 +114,23 @@ h1 {
     border: 2px solid #5d4037;
     background-color: var(--color-sand);
     padding: 50px;
-    margin: 50px;
+    margin: 100px;
     border-radius: 1px;
 }
 
 .menu-grid {
     display: flex;
-    margin: 50px;
+    margin: 100px;
     justify-content: center;
     align-items: stretch;
-    gap: 50px;
-    max-height: 1200px;
+    gap: 60px;
 }
 
 .menu-image {
     flex: 1;
+    display: flex;
+    box-sizing: border-box;
+    min-height: 0;
 }
 
 .menu-image img {
@@ -139,7 +138,6 @@ h1 {
     height: 100%;
     object-fit: cover;
     border: 2px solid #5d4037;
-
 }
 
 .menu-container {
@@ -172,6 +170,32 @@ h1 {
     margin-bottom: 10px;
 }
 
+
+@media (max-width: 950px) {
+    .menu-grid {
+        flex-direction: column;
+        margin: 20px;
+        gap: 20px;
+        max-height: none;
+    }
+    .menu-container {
+        order: 1;
+        padding: 20px;
+    }
+
+    .menu-image {
+        order: 2;
+    }
+
+    .menu-textbox {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .menu-container h2 {
+        font-size: 35px;
+    }
+}
 
 
 /* TÄHÄN TULISI FOOTERIA KOSKEVA CSS */
