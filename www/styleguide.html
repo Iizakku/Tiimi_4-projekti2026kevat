@@ -46,7 +46,9 @@
 
         /* STYLEGUIDE OHJE: H1 otsikot isoja ja ilmavia hieman suuremmalla letter spacingilla. */ 
         h1 {
-            /* IISAK LISÄÄ TÄHÄN CSS */
+			font-size: 5rem;
+			margin-bottom: 0;
+			color: white;
         }
 
         /* STYLEGUIDE OHJE:  H2 selkeä, vähemmän spacingia. */
@@ -67,10 +69,62 @@
     /* 1. Hero & Navigaatio*/
     /* STYLEGUIDE OHJE: Hero osiossa logo vasen yläkulma (pieni kuvake), yrityksen nimi keskellä ja nav oikea yläkulma. Taustana kuva (roastery3.jpg) koko heron laajuudella.
     Navigaation tausta läpinäkyvä. Jos mahdollista, niin seuraa scrollissa ja tausta vaihtuu #4B3621 */
+		.hero {
+			position: relative;
+			background-image: url('../images/roastery3.jpg');
+			background-position: center 75%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 50vh;
+		}
+
+		.hero-text {
+			text-align: center;
+		}
+
+		.logo img {
+			height: 18rem;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+			margin-top: 23rem;
+			margin-left: 2rem;
     
-    /* Lisää Hero/navigaatio -osuuden yleinen css design tähän (poista tämä kommentti kun valmis) */
+		.navbar {
+		width: 100%;
+		height: 60px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: var( --color-coffee);
+	}
 
+		.nav-links {
+			display: flex;
+			list-style: none;
+			gap: 1rem;
+			padding: 0.5rem 1rem;
+		}
 
+		.nav-links a {
+			color: white;
+			font-size: 1rem;
+			text-decoration: none;
+		}
+
+		.nav-links a:visited {
+			color: pink;
+		}
 
     /* 2. SECTION -osiot*/
     /* STYLEGUIDE OHJE: Sectionit vuorotellen taustoilla #FAF0E6 ja #F5EEDA, centered content. */
@@ -83,6 +137,20 @@
     /* STYLEGUIDE OHJE: Linkeissä hover -> underline. CTA napit -> tausta #E1AD60, teksti vaalea. (painikkeiden perustyyli sama, mutta väri ja laveys voisi muuttua tarpeen mukaan)
 
     /* Lisää painikkeiden yleinen css design tähän (poista tämä kommentti kun valmis) */
+	.button1 {
+	background-color: var(--color-gold);
+	color: white;
+	padding: 0.75rem 1.5rem;
+	border-radius: 8px;
+	text-decoration: none;
+	font-size: 1rem;
+	transition: background-color 0.3s;
+}
+
+	.button1:hover {
+		background-color: rgba(101, 67, 33, 0.7);
+	}
+
 
 
 
