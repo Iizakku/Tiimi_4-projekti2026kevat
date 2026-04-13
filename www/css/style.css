@@ -214,6 +214,30 @@ button:hover {
     font-size: 2rem;
 }
 
+
+@media (max-width: 950px) {
+    .form-page-textbox, .form-grid {
+       padding: 20px;
+       margin: 20px;
+
+    }
+    .form-grid h2 {
+        font-size: 1.5rem;
+    }
+
+    .button[type=submit] {
+        width: 100%;
+        padding: 0.7rem 0;
+    }
+
+    .label, pr {
+        font-size: 1em;
+        margin-left: 0;
+    }
+
+  
+}
+
 /*-------yhteydenottolomakeloppuu-------*/
 
 /*-------footer alkaa-------*/
