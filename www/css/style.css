@@ -36,6 +36,13 @@ body {
     background-color: var(--color-cream);
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .hero {
 	position: relative;
     background-image: url('../images/roastery3.jpg');
@@ -46,7 +53,8 @@ body {
     justify-content: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 50vh;
+	min-height: 60vh;
+    width: 100%;
 }
 
 .hero-text {
@@ -54,13 +62,14 @@ body {
 }
 
 .logo img {
-    height: 18rem;
+    width: 120px;
+    height: auto;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-top: 23rem;
+    margin-top: 15rem;
     margin-left: 2rem;
 }
 
@@ -84,6 +93,16 @@ body {
     padding: 0.5rem 1rem;
 }
 
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--color-rust);
+}
+
 h1 {
 	font-size: 5rem;
     margin-bottom: 0;
@@ -96,14 +115,15 @@ h1 {
     color: white;
 }
 
-.nav-links a {
-    color: white;
-    font-size: 1rem;
-	text-decoration: none;
-}
+@media (max-width: 900px) {
 
-.nav-links a:visited {
-    color: pink;
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
 }
 
 /* info-section */
@@ -144,7 +164,168 @@ h1 {
 	background-color: rgba(101, 67, 33, 0.7);
 }
 
+/* Menu */
 
+.menu-textbox {
+    border: 2px solid #5d4037;
+    background-color: var(--color-sand);
+    padding: 50px;
+    margin: 100px;
+    border-radius: 1px;
+}
+
+.menu-grid {
+    display: flex;
+    margin: 100px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 60px;
+}
+
+.menu-image {
+    flex: 1;
+    display: flex;
+    box-sizing: border-box;
+    min-height: 0;
+}
+
+.menu-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #5d4037;
+}
+
+.menu-container {
+    flex: 1;
+    border: 2px solid #5d4037;
+    background-color: var(--color-gold);
+    border-radius: 1px;
+    padding: 50px;
+    text-align: center;
+}
+
+.menu-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-container li {
+    margin-bottom: 5px;
+}
+
+.menu-container h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.menu-container h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .menu-grid {
+        flex-direction: column;
+        margin: 20px;
+        gap: 20px;
+        max-height: none;
+    }
+    .menu-container {
+        order: 1;
+        padding: 20px;
+    }
+
+    .menu-image {
+    order: 2;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    }
+
+    .menu-textbox {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .menu-container h2 {
+        font-size: 35px;
+    }
+}
+
+/* Menu päättyy */
+
+/* Saapuminen */
+
+/* GRID LAYOUT */
+.map-page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.map-page-grid > * {
+    min-width: 0;
+}
+
+/* KARTTA */
+.map iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* säilyttää mittasuhteen */
+    height: auto;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* YHTEYSTIEDOT & AUKIOLOAJAT */
+.contact-info,
+.open-hours {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-info h2,
+.open-hours h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.open-hours img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.button4 {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--color-gold);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button4:hover {
+    background-color: var(--color-rust);
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .map-page-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
+/* Saapuminen päättyy */
 
 /*----------Yhteydenottolomakesivu----------*/
 
@@ -214,8 +395,7 @@ button:hover {
     font-size: 2rem;
 }
 
-
-@media (max-width: 950px) {
+@media (max-width: 900px) {
     .form-page-textbox, .form-grid {
        padding: 20px;
        margin: 20px;
@@ -234,35 +414,98 @@ button:hover {
         font-size: 1em;
         margin-left: 0;
     }
-
-  
 }
 
 /*-------yhteydenottolomakeloppuu-------*/
 
 /*-------footer alkaa-------*/
 
-.grid-footer {
-	background-color: var(--color-coffee);
-	color: white;
-	display: grid;
-    grid-template-columns: 1fr 1fr;
-	font-size: 1.5rem;
-	border: 2px solid #5d4037;
-	padding: 0 150px;
-	gap: 10rem;
+/* FOOTER */
+
+footer {
+    background: var( --color-coffee);
+    color: white;
+    padding: 30px;
+    width: 100%;
 }
 
-.footer-column1,
-.footer-column2 {
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--color-gold);
+    text-decoration: none;
+}
+
+footer img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-info a:not(.button4) {
+    color: var(--color-gold);
+    text-decoration: none;
+}
+
+.contact-info a:not(.button4):hover {
+    text-decoration: underline;
+    color: var(--color-rust);
+}
+
+@media (max-width: 900px) {
+    .grid-footer {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 400px) {
+  .grid-footer {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .grid-footer > div {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-	align-items: center;
-}
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
 
-.footer-column2 img {
-	width: 170px;
-	height: auto;
-	gap: 1rem;
+  footer img {
+    max-width: 80px;
+    height: auto;
+    margin: 10px auto 0 auto;
+    display: block;
+  }
+
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
 }
