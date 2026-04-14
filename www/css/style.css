@@ -196,6 +196,22 @@ h1 {
     background-color: var(--color-rust);
     color: white;
 }
+
+.about-us-button {
+    background-color: var(--color-gold);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.about-us-button:hover {
+    background-color: var(--color-rust);
+}
  
 /* Menu */
  
@@ -554,7 +570,8 @@ footer p {
  
     .button1,
     .button2,
-    .button3 {
+    .button3,
+	.about-us-button {
         display: block;
         width: fit-content;
         margin: 0 auto;
@@ -563,6 +580,11 @@ footer p {
     .button3 {
         align-self: center;
     }
+
+	.about-us-button {
+		margin-bottom: 10px;
+	}
+
  
     .text-box2 {
         grid-column: 1;
