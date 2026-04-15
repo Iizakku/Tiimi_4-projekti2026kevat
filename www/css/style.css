@@ -68,9 +68,10 @@ html, body {
  
 .logo {
     display: flex;
-    align-items: center;
-    margin-top: 15rem;
-    margin-left: 2rem;
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    z-index: 2;
 }
  
 .navbar {
@@ -90,6 +91,7 @@ html, body {
     display: flex;
     list-style: none;
     gap: 1rem;
+    margin-left: auto;
     padding: 0.5rem 1rem;
 }
  
@@ -113,6 +115,10 @@ h1 {
 	font-size: 2rem;
     margin-top: 0;
     color: white;
+}
+
+.hamburger-menu {
+    display: none;
 }
  
 /* info-section */
@@ -499,29 +505,6 @@ h1 {
     flex: 1;
 }
 
-@media (max-width: 900px) {
-    .owner-article {
-        flex-direction: column;
-        margin: 20px;
-        gap: 20px;
-        max-height: none;
-    }
-
-    .about-us-textbox,
-    .about-us-image {
-        margin: 20px;
-        gap: 20px;
-    }
-    .owner-textbox {
-        order: 1;
-        padding: 20px;
-    }
-
-    .owner-image {
-        order: 2;
-    }
-}
-
 /* /*-------Tarinammecssloppuu*-------/ */
  
 /*----------Yhteydenottolomakesivu----------*/
@@ -588,6 +571,101 @@ button:hover {
 }
  
 /*-------yhteydenottolomakeloppuu-------*/
+
+/* Paahtimo */
+
+.roastery-article {
+    border: 2px solid #5d4037;
+    background-color: var(--color-sand);
+    padding: 50px;
+    margin: 100px;
+    border-radius: 1px;
+}
+
+.roastery-article h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.roastery-article h3 {
+    margin-top: 30px;
+}
+
+.roastery-article p {
+    margin-bottom: 15px;
+}
+
+.roastery-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 100px;
+    padding: 0 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.roastery-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #5d4037;
+}
+
+.product-container {
+    max-width: 1100px;
+    margin: 60px auto;
+}
+
+.product-container h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.product-card {
+    background: #fff;
+    border: 2px solid #5d4037;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-name {
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.product-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/* Paahtimo päättyy */
  
 /*-------footer alkaa-------*/
  
@@ -792,6 +870,152 @@ footer p {
  
     footer img {
         width: 80px;
+    }
+
+        *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    :root {
+        --bar-width: 60px;
+        --bar-height: 8px;
+        --hamburger-gap: 6px;
+        --hamburger-marging: 10px;
+        --animation-timing: 200ms ease-in-out;
+        --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+    }
+
+    .hamburger-menu {
+        --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+        display: flex;
+        flex-direction: column;
+        gap: var(--hamburger-gap);
+        width: max-content;
+        position: absolute;
+        top: var(--hamburger-marging);
+        right: var(--hamburger-marging);
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    .hamburger-menu input {
+        content: "";
+        width: var(--bar-width);
+        height: var(--bar-height);
+        background-color: var(--color-cream);
+        border-radius: 9999px;
+        transform-origin: left center;
+        transition: opacity var(--animation-timing), width var(--animation-timing),
+         rotate var(--animation-timing), translate var(--animation-timing);
+    }
+
+    .hamburger-menu input {
+        appearance: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        pointer-events: none;
+    }
+
+    .hamburger-menu:has(input:checked)::before {
+        rotate: 45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / -2);
+    }
+
+    .hamburger-menu:has(input:checked)::after {
+        rotate: -45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / 2);
+    }
+
+    .hamburger-menu input:checked {
+        opacity: 0;
+        width: 0;
+    }
+
+    .nav-links {
+        transform: translateX(100%);
+        transition: transform var(--animation-timing);
+        flex-direction: column;
+        position: absolute;
+        align-items: flex-end;
+        text-align: right;
+        top: 40px;
+        right: 0;
+        background: var(--color-coffee);
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nav-links li {
+    width: 40%;
+    }
+
+    .nav-links a {
+    display: block;
+    width: 100%;
+    }
+
+    .hamburger-menu:has(input:checked) + .nav-links {
+        transform: translateX(0);
+        display: flex;
+    }
+
+    .owner-article {
+        flex-direction: column;
+        margin: 20px;
+        gap: 20px;
+        max-height: none;
+    }
+
+    .about-us-textbox,
+    .about-us-image {
+        margin: 20px;
+        gap: 20px;
+    }
+    .owner-textbox {
+        order: 1;
+        padding: 20px;
+    }
+
+    .owner-image {
+        order: 2;
+    }
+
+     /* ARTICLE */
+    .roastery-article {
+        padding: 20px;
+        margin: 30px 15px;
+    }
+
+    /* KUVAT → 1 sarake */
+    .roastery-images {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+        margin: 30px 0;
+    }
+
+    .roastery-images img {
+        height: 250px;
+    }
+
+    /* TUOTTEET → 1 sarake */
+    .product-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .product-container {
+        padding: 0 15px;
     }
 }
  
