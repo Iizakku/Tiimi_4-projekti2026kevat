@@ -446,6 +446,7 @@ h1 {
 }
 
 
+
 .about-us-button {
     display: inline-block;
     margin-top: 15px;
@@ -473,7 +474,13 @@ h1 {
 .about-us-image {
     margin: 0 0 40px 0;
     text-align: center;
-}
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px;
+    max-width: 2560px;
+  }
+
 
 .about-us-image img {
     width: 70%;
