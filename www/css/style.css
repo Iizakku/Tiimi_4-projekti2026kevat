@@ -446,6 +446,7 @@ h1 {
 }
 
 
+
 .about-us-button {
     display: inline-block;
     margin-top: 15px;
@@ -477,6 +478,7 @@ h1 {
     margin: 50px;
     border: 2px solid #5d4037;
     border-radius: 1px;
+    max-width: 2560px;
     
    
 }
