@@ -471,30 +471,30 @@ h1 {
     
 
 .about-us-image {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-    border: 2px solid #5d4037;
-    border-radius: 1px;
-    
-   
+    margin: 0 0 40px 0;
+    text-align: center;
 }
+
+.about-us-image img {
+    width: 70%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	border: 2px solid #5d4037;
+  }
 
 .owner-article {
     display: flex;
+    flex-direction: row;
     margin: 50px;
-    justify-content: center;
-    align-items: stretch;
     gap: 60px;
-    
+    align-items: stretch;
 }
 
 .owner-image {
-    display: flex;
-    box-sizing: border-box;
-    min-height: 0;
-   
+    flex: 1;
+    max-height: 600px;
+    overflow: hidden;
 }
 
 .owner-image img {
@@ -504,8 +504,9 @@ h1 {
     border: 2px solid #5d4037;
 }
 
-
 .owner-textbox {
+    flex: 1;
+    margin: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -514,11 +515,6 @@ h1 {
     background-color: var(--color-sand);
     padding: 50px;
     border-radius: 1px;
-}
-
-.owner-image,
-.owner-textbox {
-    flex: 1;
 }
 
 /* /*-------Tarinammecssloppuu*-------/ */
@@ -999,7 +995,18 @@ footer p {
     .about-us-image {
         margin: 20px;
         gap: 20px;
-    }
+	}
+
+	.about-us-image {
+		margin: 0 0 40px 0;
+		width: 100%;
+	}
+
+	.about-us-image img {
+		width: 100%;
+		margin: 0;
+	}
+
     .owner-textbox {
         order: 1;
         padding: 20px;
