@@ -14,34 +14,40 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
         <!--Iisakilla fontit lisätty käyttöön CSS puolella-->
-        <script type="application/ld+json"> 
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "CafeOrCoffeeShop",
-  "name": "Aurora Brew Lab",
-  "description": "Kahvila ja Paahtimo nettisivut kouluprojektia varten",
-  "url": "https://iizakku.github.io/Tiimi_4-projekti2026kevat/",
-  "telephone": "+358 442804059",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Ylätori 2",
-    "addressLocality": "Vaasa",
-    "postalCode": "65100",
-    "addressCountry": "FI"
+  "@graph": [
 
-  },
+    {
+      "@type": "CafeOrCoffeeShop",
+      "name": "Aurora Brew Lab",
+      "description": "Kahvila ja Paahtimo nettisivut kouluprojektia varten",
+      "url": "https://iizakku.github.io/Tiimi_4-projekti2026kevat/",
+      "telephone": "+358 442804059",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ylätori 2",
+        "addressLocality": "Vaasa",
+        "postalCode": "65100",
+        "addressCountry": "FI"
+      },
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 63.095647,
-        "longitude": 21.61422103218802 
-      },
+        "longitude": 21.61422103218802
+      }
+    },
+
     {
       "@type": "WebPage",
       "@id": "https://iizakku.github.io/Tiimi_4-projekti2026kevat/saapuminen.html",
       "url": "https://iizakku.github.io/Tiimi_4-projekti2026kevat/saapuminen.html",
       "name": "Saapuminen",
       "description": "Ohjeet kahvila/paahtimoon saapumiseen, kartta sekä yhteystiedot"
-    },
+    }
+
+  ]
 }
 </script>
     </head>
