@@ -43,6 +43,8 @@ html, body {
     overflow-x: hidden;
 }
  
+/* HERO alkaa */
+
 .hero {
 	position: relative;
     background-image: url('../images/roastery3.jpg');
@@ -120,9 +122,13 @@ h1 {
 .hamburger-menu {
     display: none;
 }
+
+/* HERO päättyy */
  
+
+/* ETUSIVU alkaa */
+
 /* info-section */
- 
 .info-section {
 	border: 2px solid #5d4037;
 }
@@ -203,75 +209,7 @@ h1 {
     color: white;
 }
 
-    
- 
-/* Menu */
- 
-.menu-textbox {
-    border: 2px solid #5d4037;
-    background-color: var(--color-sand);
-    padding: 50px;
-    margin: 100px;
-    border-radius: 1px;
-}
- 
-.menu-grid {
-    display: flex;
-    margin: 100px;
-    justify-content: center;
-    align-items: stretch;
-    gap: 60px;
-}
- 
-.menu-image {
-    flex: 1;
-    display: flex;
-    box-sizing: border-box;
-    min-height: 0;
-    border: 2px solid #5d4037;
-}
- 
-.menu-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 2px solid #5d4037;
-}
- 
-.menu-container {
-    flex: 1;
-    border: 2px solid #5d4037;
-    background-color: var(--color-gold);
-    border-radius: 1px;
-    padding: 50px;
-    text-align: center;
-}
- 
-.menu-container ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
- 
-.menu-container li {
-    margin-bottom: 5px;
-}
- 
-.menu-container h2 {
-    font-size: 50px;
-    margin-bottom: 30px;
-}
- 
-.menu-container h3 {
-    font-size: 25px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
- 
-/* Menu päättyy */
- 
-/* ===== PIENPAAHTIMO ===== */
- 
+/* Pienpaahtimo */
 .roastery-section {
     padding: 40px;
     background-color: var(--color-cream);
@@ -349,8 +287,7 @@ h1 {
     flex: 1;
 }
  
-/* ===== ARVOT ===== */
- 
+/* Arvot */
 .values-section {
     padding: 40px;
     background-color: var(--color-cream);
@@ -371,7 +308,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-	font-size: 1.2rem;
+    font-size: 1.2rem;
 }
  
 .image-box3 img {
@@ -381,217 +318,76 @@ h1 {
     display: block;
     border: 2px solid #5d4037;
 }
- 
-/* Saapuminen */
- 
-/* GRID LAYOUT */
-.map-page-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 40px;
-}
- 
-.map-page-grid > * {
-    min-width: 0;
-}
- 
-/* KARTTA */
-.map iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-    border: 0;
-    border-radius: 10px;
-}
- 
-/* YHTEYSTIEDOT & AUKIOLOAJAT */
-.contact-info,
-.open-hours {
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
- 
-.contact-info h2,
-.open-hours h2 {
-    margin-bottom: 10px;
-    text-align: center;
-}
- 
-.open-hours img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
- 
-/* Saapuminen päättyy */
+
+/* ETUSIVU päättyy */
 
 
-/* /*-------Tarinammecss*-------/ */
+/* MENU alkaa */
 
-.about-us-textbox {
-
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.menu-textbox {
     border: 2px solid #5d4037;
     background-color: var(--color-sand);
     padding: 50px;
-    margin: 50px;
+    margin: 100px;
     border-radius: 1px;
-    font-size: 1.2em;
 }
-
-
-
-.about-us-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: var(--color-gold);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-
-}
-
-.about-us-button-group {
+ 
+.menu-grid {
     display: flex;
-    gap: 15px;
-    margin-top: 20px;
-    flex-wrap: wrap; 
-}
-
-.about-us-button:hover {
-    background-color: var(--color-rust);
-    color: white;
-}
-    
-
-.about-us-image {
-    margin: 0 0 40px 0;
-    text-align: center;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    border-radius: 1px;
-    max-width: 2560px;
-  }
-
-
-.about-us-image img {
-    width: 70%;
-	height: auto;
-	display: block;
-	margin: 0 auto;
-	border: 2px solid #5d4037;
-  }
-
-.owner-article {
-    display: flex;
-    flex-direction: row;
-    margin: 50px;
-    gap: 60px;
+    margin: 100px;
+    justify-content: center;
     align-items: stretch;
+    gap: 60px;
 }
-
-.owner-image {
+ 
+.menu-image {
     flex: 1;
-    max-height: 600px;
-    overflow: hidden;
+    display: flex;
+    box-sizing: border-box;
+    min-height: 0;
 }
-
-.owner-image img {
+ 
+.menu-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border: 2px solid #5d4037;
 }
-
-.owner-textbox {
+ 
+.menu-container {
     flex: 1;
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
     border: 2px solid #5d4037;
-    font-size: 1.3em;
-    background-color: var(--color-sand);
-    padding: 50px;
+    background-color: var(--color-gold);
     border-radius: 1px;
-}
-
-/* /*-------Tarinammecssloppuu*-------/ */
- 
-/*----------Yhteydenottolomakesivu----------*/
- 
-.form-page-textbox {
-    box-sizing: border-box;
-    display: flex;
-    border: 2px solid #5d4037;
-    background-color: var(--color-sand);
     padding: 50px;
-    margin: 50px;
-    border-radius: 1px;
-}
-   
-label, pr {
-    font-size: 1.2em;
-    margin-left: 10px;
-    font-family: 'Montserrat Classic', sans-serif;
-}
- 
-input[type=text],input[type=email], input[type=tel], textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #c48f67;
-    box-shadow: 0 0 5px #a57754;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
- 
-input[type=radio] {
-    accent-color: #c48f67;
-}
- 
-button[type=submit]  {
-	background-color: var(--color-gold);
-	color: white;
-    border: #c48f67;
-	padding: 0.75rem 1.5rem;
-	border-radius: 8px;
-	text-decoration: none;
-	font-size: 1rem;
-	transition: background-color 0.3s;
-}
- 
-button:hover {
-	background-color: rgba(101, 67, 33, 0.7);
-}
- 
-.form-grid {
-    padding: 12px 24px 24px 24px;
-    margin: 50px;
-    background: linear-gradient(135deg, #dbad84, #e8d2bf);
-    border-radius: 10px;
-    border: 2px solid #c48f67;
-    box-shadow: 0px 10px 30px rgb(97, 96, 96);
-}
- 
-.form-grid h2 {
     text-align: center;
-    font-size: 2rem;
 }
  
-/*-------yhteydenottolomakeloppuu-------*/
+.menu-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+.menu-container li {
+    margin-bottom: 5px;
+}
+ 
+.menu-container h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+ 
+.menu-container h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
-/* Paahtimo */
+/* MENU päättyy */
+
+
+/* PAAHTIMO alkaa */
 
 .roastery-article {
     border: 2px solid #5d4037;
@@ -684,11 +480,218 @@ button:hover {
     font-size: 0.8rem;
 }
 
-/* Paahtimo päättyy */
+/* PAAHTIMO päättyy */
+
+
+/* TARINAMME alkaa */
+
+.about-us-textbox {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid #5d4037;
+    background-color: var(--color-sand);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 1px;
+}
+
+
+
+.about-us-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--color-gold);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.about-us-button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+}
+
+.about-us-button:hover {
+    background-color: var(--color-rust);
+    color: white;
+}
+    
+
+.about-us-image {
+    margin: 0 0 40px 0;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px;
+    max-width: 2560px;
+}
+
+
+.about-us-image img {
+    width: 70%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	border: 2px solid #5d4037;
+}
+
+.owner-article {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    gap: 60px;
+    align-items: stretch;
+}
+
+.owner-image {
+    flex: 1;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.owner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #5d4037;
+}
+
+.owner-textbox {
+    flex: 1;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #5d4037;
+    background-color: var(--color-sand);
+    padding: 50px;
+    border-radius: 1px;
+    font-size: 1.2rem;
+}
+
+/* TARINAMME päättyy */
+
  
-/*-------footer alkaa-------*/
+/* SAAPUMINEN alkaa */
  
-/* FOOTER */
+.map-page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+ 
+.map-page-grid > * {
+    min-width: 0;
+}
+ 
+/* Kartta */
+.map iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+    border-radius: 10px;
+}
+ 
+/* Yhteystiedot & aukioloajat */
+.contact-info,
+.open-hours {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+ 
+.contact-info h2,
+.open-hours h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+ 
+.open-hours img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+ 
+/* SAAPUMINEN päättyy */
+
+
+/* OTA YHTEYTTÄ alkaa */
+ 
+.form-page-textbox {
+    box-sizing: border-box;
+    display: flex;
+    border: 2px solid #5d4037;
+    background-color: var(--color-sand);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 1px;
+}
+   
+label, pr {
+    font-size: 1.2em;
+    margin-left: 10px;
+    font-family: 'Montserrat Classic', sans-serif;
+}
+ 
+input[type=text],input[type=email], input[type=tel], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c48f67;
+    box-shadow: 0 0 5px #a57754;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+ 
+input[type=radio] {
+    accent-color: #c48f67;
+}
+ 
+button[type=submit]  {
+	background-color: var(--color-gold);
+	color: white;
+    border: #c48f67;
+	padding: 0.75rem 1.5rem;
+	border-radius: 8px;
+	text-decoration: none;
+	font-size: 1rem;
+	transition: background-color 0.3s;
+}
+ 
+button:hover {
+	background-color: rgba(101, 67, 33, 0.7);
+}
+ 
+.form-grid {
+    padding: 12px 24px 24px 24px;
+    margin: 50px;
+    background: linear-gradient(135deg, #dbad84, #e8d2bf);
+    border-radius: 10px;
+    border: 2px solid #c48f67;
+    box-shadow: 0px 10px 30px rgb(97, 96, 96);
+}
+ 
+.form-grid h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+ 
+/* OTA YHTEYTTÄ päättyy */
+
+
+/* FOOTER alkaa */
  
 footer {
     background: var( --color-coffee);
@@ -729,6 +732,8 @@ footer p {
     text-decoration: underline;
     color: var(--color-rust);
 }
+
+/* FOOTER päättyy */
 
 
 /* ===== RESPONSIIVISUUS ===== */
@@ -793,6 +798,10 @@ footer p {
 		margin-bottom: 10px;
 	}
 
+    .about-us-image {
+        width: 100%;
+        padding: 20px 20px;
+    }
  
     .text-box2 {
         grid-column: 1;
@@ -1023,13 +1032,11 @@ footer p {
         order: 2;
     }
 
-     /* ARTICLE */
     .roastery-article {
         padding: 20px;
         margin: 30px 15px;
     }
 
-    /* KUVAT → 1 sarake */
     .roastery-images {
         grid-template-columns: 1fr;
         padding: 0 15px;
@@ -1040,7 +1047,6 @@ footer p {
         height: 250px;
     }
 
-    /* TUOTTEET → 1 sarake */
     .product-cards {
         grid-template-columns: 1fr;
     }
