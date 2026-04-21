@@ -814,6 +814,7 @@ footer p {
     .text-box3 {
         align-items: center;
         text-align: center;
+        font-size: 1rem;
     }
  
     .image-box3 img {
@@ -886,6 +887,10 @@ footer p {
     .label, pr {
         font-size: 1em;
         margin-left: 0;
+    }
+
+    .owner-textbox {
+        font-size: 1rem;
     }
  
     .grid-footer {
